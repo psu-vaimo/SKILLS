@@ -10,7 +10,7 @@ first session on their own.
 Five need only one person: `ASK-09` · `ASK-11` · `ASK-23` · `ASK-37` · `ASK-41`. Useful when a full workshop
 cannot be arranged.
 
-The abilities themselves are in `px-ability-register.md`.
+The abilities themselves are in `ability-register.md`.
 
 ### The rule these are written to
 

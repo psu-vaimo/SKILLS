@@ -5,9 +5,9 @@ with product information. No organisation has all of it — the point is to have
 you walk into a new one, the way a text-editor breakdown lists RTF *and* Docx *and* PDF export without any
 one editor having all three.
 
-**Companion documents.** The 54 workshop questions are in `px-workshop-questions.md`; every decision's
-reasoning, the client test, retirements and how lines changed are in `px-model-background.md`; what happens
-next is in `px-pin.md`.
+**Companion documents.** The 54 workshop questions are in `workshop-questions.md`; every decision's
+reasoning, the client test, retirements and how lines changed are in `background.md`; what happens
+next is in `pin.md`.
 
 ## Decisions
 
@@ -888,4 +888,4 @@ By domain: `SOURCE` 21 · `COLLECT` 10 · `MIGRATE` 4 · `MASTER` 6 · `MODEL` 2
 `ENRICH` 14 · `CONTENT` 12 · `ASSETS` 20 · `QUALITY` 16 · `ORGANISE` 26 · `DELIVER` 18 · `PRESENT` 15 ·
 `MEASURE` 9.
 
-Retirements, the counts history and every decision's reasoning are in `px-model-background.md`.
+Retirements, the counts history and every decision's reasoning are in `background.md`.

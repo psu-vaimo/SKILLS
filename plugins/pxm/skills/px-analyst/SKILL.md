@@ -16,10 +16,8 @@ that model.
 |---|---|
 | `references/ability-register.md` | **The board.** 15 domains, 205 abilities with all four tag types, the facet legends, the two vocabularies, the decisions. What you scan. |
 | `references/workshop-questions.md` | **The instrument.** 54 questions — what each covers, who to invite, what to listen for. What you carry into a room. |
-
-Two further files live in `/Users/pontus/Documents/Claude/`, outside this skill: `px-model-background.md`
-(every decision's argument, the live client test, retirements, how lines changed) and `px-pin.md` (current
-working notes). Consult the background only when a choice is challenged or being revisited.
+| `references/background.md` | **The reasoning.** Every decision's argument, the live client tests, retirements, how lines changed. Consult only when a choice is challenged or being revisited. |
+| `references/pin.md` | **Where we continue.** Current state and what happens next. Read before assuming what is next. |
 
 **Load the file you need — do not answer from memory.** The register carries IDs (`SOURCE-14`, `ASSETS-11`),
 provenance marks and tags; a summary from memory drifts and loses the IDs that make it citable.
@@ -242,14 +240,14 @@ Working rules learned from building it and from the first live test:
 
 ### Working file conventions, if editing the register
 
-- **The model is four files** in `/Users/pontus/Documents/Claude/`, split at draft 20: `px-ability-register.md`
-  (the board), `px-workshop-questions.md` (the 54 questions), `px-model-background.md` (all reasoning,
-  retirements, line history, the client test) and `px-pin.md` (what happens next). Drafts 1–20 are kept as
-  `px-ability-model-N.md` for history.
+- **The model is four files** in `references/`, split at draft 20: `ability-register.md` (the board),
+  `workshop-questions.md` (the 54 questions), `background.md` (all reasoning, retirements, line history,
+  the client tests) and `pin.md` (what happens next). Drafts 1–20 are kept outside the plugin, in
+  `px-ability-archive.zip`, for history.
 - **Reasoning goes in the background file, never in the register.** The register grew to 2,500 lines because
   every argument was written next to the thing it justified; the domain sections ended up with more
   commentary than abilities. Keep the register to what you would have open with a client.
-- Read `px-pin.md` before assuming what is next.
+- Read `pin.md` before assuming what is next.
 - Record *why* alongside *what*. The italic commentary blocks under each domain are the reasoning that makes
   the register defensible in a room; keep writing them.
 - Retired lines stay visible with `~~strikethrough~~` and a one-line reason. Never delete one — the reasoning

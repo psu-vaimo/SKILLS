@@ -18,7 +18,7 @@ actually has.
 |---|---|
 | **From** | `export` — computable from the file alone. `+spec` — needs the client's own data specification, attribute list or business rules. `+channel` — needs the destination's published requirements. `referent` — needs comparison against something outside the data. |
 | **Default** | A starting threshold so results are comparable between clients and between people. Argue with it; the destination decides the real one. |
-| **Evidences** | The `px-analyst` ability this check produces evidence about. Runs both ways — a check that fires is evidence the ability is missing, and an ability the workshop claimed is testable here. |
+| **Evidences** | The ability in the `abilities` register this check produces evidence about. Runs both ways — a check that fires is evidence the ability is missing, and an ability the workshop claimed is testable here. |
 
 Definitions below are paraphrased. `references/sources.md` has the verbatim wording and where to get it.
 

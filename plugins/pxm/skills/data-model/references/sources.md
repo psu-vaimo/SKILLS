@@ -1,7 +1,7 @@
 # Sources
 
 Modelling-specific citations. For data *quality* dimensions, profiling and migration practice, use
-`px-data-audit/references/sources.md` instead — that file is not duplicated here.
+`data-audit/references/sources.md` instead — that file is not duplicated here.
 
 | Grade | Means |
 |---|---|

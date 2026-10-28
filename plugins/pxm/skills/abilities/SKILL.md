@@ -1,5 +1,5 @@
 ---
-name: px-analyst
+name: abilities
 description: Analyse an organisation's product information (PX/PXM/PIM) practice, prep or run a discovery workshop, or continue building Pontus' generalised Product Information Ability Model. Use for "analyse this organisation's PIM/PXM setup", "what should I ask in this discovery", "does this client need a DAM", "prep a PX workshop", "evaluate this requirements register", or any work extending the ability model itself. The model is a reference file this skill consults, not something to recite from memory.
 ---
 
@@ -298,7 +298,7 @@ it happens, and no analysis work depends on it. Do not start it unprompted.
 
 ## Related
 
-`px-data-audit` is the evidence-side instrument. This skill reads **testimony** — what an organisation
+`data-audit` is the evidence-side instrument. This skill reads **testimony** — what an organisation
 says it can do; that one reads **the data itself**. Load it when client export files are in play, when a
 finding needs corroborating against what the data actually holds, or when a `⚠` line is silent in rooms
 for a reason.
@@ -310,9 +310,9 @@ article numbers", so `MODEL-19`'s four silences were weak evidence for retiremen
 (`UNIQUE-05`, `STRUCT-10`) were run on `[S]`'s export, the line held. The same reasoning
 covers the `ASSETS` diagnostic, which the model already says fires on evidence rather than on complaints.
 
-`px-data-model` designs the model itself — what a product is, how it varies, what describes it, and how
+`data-model` designs the model itself — what a product is, how it varies, what describes it, and how
 that is expressed in a given platform. It is where this model's `MODEL` and `CONTEXT` domains stop being
 questions and become decisions, and its decision register cites ability IDs throughout. Load it when the
 conversation turns from *what must be true* to *how it is structured*.
 
-`vaimo-pim-discovery-report` turns any of their output into the signed document.
+`discovery-report` turns any of their output into the signed document.

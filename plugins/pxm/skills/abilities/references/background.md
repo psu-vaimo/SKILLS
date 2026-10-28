@@ -1026,7 +1026,7 @@ flows without asking the vendor*, which may be `ORGANISE-15`, `DELIVER-18` and `
 
 **What was tested.** The full export of [S]'s outgoing PIM — 3.4 million articles, 22,442 variant
 groupings, 520,000 image and 118,000 document records, and the system's own attribute definitions, class
-lists and value lists — audited with `px-data-audit` and mapped per ability. No register change; this
+lists and value lists — audited with `data-audit` and mapped per ability. No register change; this
 section records the test.
 
 **Verdicts had to be redefined for data.** An extract records what *is*, so the scale is held (done and

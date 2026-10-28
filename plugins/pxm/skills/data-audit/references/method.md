@@ -188,7 +188,7 @@ equally solid unless the draft says otherwise.
 
 **Do not derive the model from the profile alone.** The data is a record of the old system's decisions,
 including its mistakes, and a model drawn straight from it migrates beautifully because nothing changed
-shape. Bring the To-Be from the workshops — `px-analyst` is the instrument — and use the audit to say
+shape. Bring the To-Be from the workshops — `abilities` is the instrument — and use the audit to say
 which parts of it the data can actually support.
 
 State the four constraint classes plainly: what the data **supports**, what it **contradicts**, what it
@@ -320,7 +320,7 @@ closing **presentation workshop**, because a report that is read alone is a repo
 alone.
 
 Where the audit is part of a discovery, none of this applies: findings go to section 7 and verdicts to
-section 9, and `vaimo-pim-discovery-report` holds the section register and the done-when tests.
+section 9, and `discovery-report` holds the section register and the done-when tests.
 
 # Writing the report: from the As-Is, without waiting
 

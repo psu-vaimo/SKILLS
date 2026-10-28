@@ -16,7 +16,7 @@ harvests itself.
 
 ## The `[S]` export — the fifth artefact, first non-testimonial (2026-10-05)
 
-**What it is.** The complete export of `[S]`'s outgoing PIM, flattened and audited with `px-data-audit`:
+**What it is.** The complete export of `[S]`'s outgoing PIM, flattened and audited with `data-audit`:
 3.4 million articles, 22,000 variant groupings, 520,000 image and 118,000 document records, and the old
 system's own attribute definitions, class lists and value lists. It is **archaeology** in the audit
 skill's sense — the system is being replaced — so its numbers size the migration, not `[S]`'s practice.
@@ -72,10 +72,10 @@ the audit's new `STRUCT-11` check. `STATUS-07` (*know where a product is in its 
 the same value on 99% of articles, and the lifecycle actually lives in an expiry date and a web flag that
 disagree on 268,000 articles. Both are `[S]` evidence lines, not new abilities.
 
-**What the extract changed in the instruments** (applied 2026-10-05): `px-data-audit` gained a
+**What the extract changed in the instruments** (applied 2026-10-05): `data-audit` gained a
 transformation register, guidance on multi-part exports, derived and supplier-number keys, file-store
 listings for `REF-01`, in-export schemas, a sensitive-content rule, the `STRUCT-11` check (75 checks now)
-and profiler fixes. `px-data-model` gained notes on PIM-only identifiers (`LIFECYCLE-04`), hidden
+and profiler fixes. `data-model` gained notes on PIM-only identifiers (`LIFECYCLE-04`), hidden
 assortments (`THING-05`) and mapping free features onto a standard (`DESCRIBE-04`).
 
 ---
@@ -96,7 +96,7 @@ The paragraph below is kept as the reasoning that led to measuring rather than r
 **But hold the retirement until it has been measured.** All four silences are testimonial artefacts, and
 running out of identifier space is not something an organisation says — it is something it discovers.
 The data shows it directly: identifier format, the space that format allows, how much is consumed, and
-whether retired codes get reused. `px-data-audit` makes that a two-check job (`UNIQUE-05`, `STRUCT-10`)
+whether retired codes get reused. `data-audit` makes that a two-check job (`UNIQUE-05`, `STRUCT-10`)
 on extracts we are getting anyway. **A silence from an artefact type that could never have raised the
 line is weak evidence** — retiring on it would be retiring for the wrong reason. Run the checks at the
 next audit, then decide.
@@ -161,7 +161,7 @@ permission to use. Confirms the point rather than adding to it: stop asking `[S]
 manufacturer or brand.
 
 **A fifth artefact is now in reach, and it is the first non-testimonial one.** Client export files —
-`px-data-audit`, built 2026-09-09, is the instrument. Every artefact type tested so far records what
+`data-audit`, built 2026-09-09, is the instrument. Every artefact type tested so far records what
 somebody *said*: a register states what an organisation wants, a workshop what it can describe, a
 pain-point list what has become intolerable. An extract states what *is*, and it cannot rehearse an
 answer or decline to mention something.

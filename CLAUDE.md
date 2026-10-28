@@ -9,7 +9,7 @@ When working in a local checkout of this repo, start every session by pulling fr
 This repo is a Claude Code marketplace (`pontus`, in `.claude-plugin/marketplace.json`) with its plugins under `plugins/`:
 
 - `routine`: the project working routine (daily, worklog, jira, pen, ord, proj).
-- `pxm`: product information consulting (px-analyst, px-data-audit, px-data-model, vaimo-pim-discovery-report).
+- `pxm`: product information consulting (abilities, data-audit, data-model, discovery-report).
 
 Each plugin has its manifest in `plugins/<plugin>/.claude-plugin/plugin.json` and one folder per skill in `plugins/<plugin>/skills/`.
 

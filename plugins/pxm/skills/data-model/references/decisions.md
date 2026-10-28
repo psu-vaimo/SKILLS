@@ -16,7 +16,7 @@ without families, families without variants, variants without knowing what a pro
 | **Decided by** | `evidence` — the data settles it; run the audit check and read the answer. `judgement` — yours to make and defend; the data informs but does not decide. `client` — a business decision with commercial consequence that is not yours to make. Escalate it, and record who made it. |
 | **Default** | What to assume when nothing argues otherwise. Not a recommendation — a starting position that makes the absence of a decision visible. |
 | **Reversing** | What it costs to change after go-live. `rename` — a config change, no data moves. `remap` — values must be transformed, the shape holds. `remigrate` — records must be reloaded. `rebuild` — the model is genuinely different and everything downstream changes with it. |
-| **Relates** | The `px-analyst` ability this decision serves. |
+| **Relates** | The ability in the `abilities` register this decision serves. |
 
 **Spend time in proportion to the `Reversing` column.** A `rebuild` decision deserves a workshop; a
 `rename` decision deserves five minutes and a convention.

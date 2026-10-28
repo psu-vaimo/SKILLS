@@ -179,7 +179,7 @@ amounts to, in evidence.
 - **7.4 Risks and improvement recommendations** — what breaks on onboarding if untouched.
 - **7.5 Data readiness verdict** — a plain judgement per area with the reasoning.
 - **7.6 Open questions and trade-offs** — the choices only the client can make, each with its options,
-  what each costs and the area it unblocks. Part of the report; answered after it (`px-data-audit`).
+  what each costs and the area it unblocks. Part of the report; answered after it (`data-audit`).
 
 **Done when:** 7.1 bounds the analysis; 7.3 cites real examples; 7.5 gives a verdict per area; and the
 verdict reaches 9's readiness column, 13.3 dependencies, 14.2 risks, 14.4 estimate and section 2.

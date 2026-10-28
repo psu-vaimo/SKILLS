@@ -161,7 +161,7 @@ Questions that map straight onto the decision register:
 |---|---|
 | *Who fills this in, and when?* | `OWN-01`, and the attribute's `Initial creation by` / `Subsequent enrichment by` |
 | *Could you hand this on now? What is missing?* | `READY-01`, `READY-03` |
-| *Who has to say yes before this goes live?* | `LIFECYCLE-01`; `ORGANISE-14` in `px-analyst` |
+| *Who has to say yes before this goes live?* | `LIFECYCLE-01`; `ORGANISE-14` in `abilities` |
 | *Where would this value come from, if nobody typed it?* | `OWN-01`, `DESCRIBE-06` |
 | *Is this the same in every market, or just translated?* | `SCOPE-02` |
 | *Would a customer choose between these on one page?* | `VARY-01` |

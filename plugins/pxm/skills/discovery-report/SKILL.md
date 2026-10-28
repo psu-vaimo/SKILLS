@@ -1,5 +1,5 @@
 ---
-name: vaimo-pim-discovery-report
+name: discovery-report
 description: Write, review or fill in a Vaimo PIM Discovery Report — the client-signed output of a PIM discovery. Use for "let's write section 11", "draft the executive summary", "what sections are still weak", "turn these workshop notes into the As-Is section", "write up the happy flow", "review this discovery report", "which pain points have no requirement", or any drafting against the Discovery Report structure. Section numbers and names are fixed by the template; the skill consults the section register rather than inventing structure.
 ---
 
@@ -85,7 +85,7 @@ signed statement of work. Paraphrase is how two documents about one engagement e
 and the signed one wins.
 
 **Plain language.** The audience is a sponsor who does not work in PIM. State the consequence, not
-the mechanism. Same house rule as the `px-analyst` skill.
+the mechanism. Same house rule as the `abilities` skill.
 
 ## Writing one section
 
@@ -153,18 +153,18 @@ There is no v3.0 `.docx` yet — the structure lives in `references/sections.md`
 
 ## Related
 
-`px-analyst` holds the generalised Product Information Ability Model. It is the better instrument for
+`abilities` holds the generalised Product Information Ability Model. It is the better instrument for
 *finding* what to put in sections 6, 8 and 12 — its questions are written to make a "no" discoverable,
 and its `Reveals` facet turns a cluster of client asks into the system they have not named yet. Load
 it when the discovery itself is being planned or when requirements need sharpening; this skill is for
 turning the result into the document.
 
-`px-data-model` produces **section 9**, and holds the rule this template states but does not explain:
+`data-model` produces **section 9**, and holds the rule this template states but does not explain:
 section 9 is the *high-level* model, and detail belongs in the separately approved data modelling file.
 It is the skill to load for any modelling question, for a data model workshop, and before promising a
 client anything a platform may not be able to express.
 
-`px-data-audit` is what produces **section 7**, and its per-area verdicts are what section 9's readiness
+`data-audit` is what produces **section 7**, and its per-area verdicts are what section 9's readiness
 column takes its judgement from. Load it whenever 7 or 9 is being written, whenever a data readiness
 verdict is needed, or when client export files arrive. It also carries the rule this document depends on
 and most reports get wrong: **a completeness figure is meaningless without its denominator**, and the

@@ -1,0 +1,17 @@
+{
+  "name": "psu-vaimo",
+  "owner": {
+    "name": "Pontus Sundén",
+    "email": "pontus.sunden@vaimo.com"
+  },
+  "metadata": {
+    "description": "Pontus Sundén's shared Claude skills."
+  },
+  "plugins": [
+    {
+      "name": "vaimo-skills",
+      "source": "./",
+      "description": "Shared skills for project work: daily routine, worklog, Jira, notes through pen, and Ord."
+    }
+  ]
+}

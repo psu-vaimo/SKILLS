@@ -1,0 +1,10 @@
+{
+  "name": "routine",
+  "version": "0.3.0",
+  "description": "Pontus' project working routine: daily routine, worklog, Jira, notes through pen, and Ord.",
+  "author": {
+    "name": "Pontus Sundén",
+    "email": "pontus.sunden@vaimo.com"
+  },
+  "repository": "https://github.com/psu-vaimo/claude"
+}

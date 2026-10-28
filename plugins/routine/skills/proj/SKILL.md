@@ -15,7 +15,7 @@ How work is organised across all of the user's projects. Follow it unless the us
 ## Repos
 
 - **One repo per project.** It holds working docs, deliverables and sometimes project-specific skills.
-- **Shared skills come from the `vaimo-skills` plugin** (marketplace `psu-vaimo`, repo `psu-vaimo/SKILLS`), installed once per user. Update with `claude plugin update vaimo-skills@psu-vaimo`. Change skills in the SKILLS repo, never as copies in a project repo.
+- **Shared skills come from the `routine` plugin** (marketplace `pontus`, repo `psu-vaimo/claude`), installed once per user. Update with `claude plugin update routine@pontus`. Change skills in the claude repo, never as copies in a project repo.
 - **Project repos hold no notes and no project facts.** Those go in NOTES (below). If you find notes or facts in a project repo, propose moving them.
 
 ## Notes
@@ -45,8 +45,8 @@ daily, jira and worklog read them from there. When a fact changes, have pen upda
 
 Skills improve as part of ordinary work. Always keep changing and developing them:
 
-- When the user corrects how something is done, or you repeat the same workaround, update the skill that should have known, in the shared skills repo (`psu-vaimo/SKILLS`).
+- When the user corrects how something is done, or you repeat the same workaround, update the skill that should have known, in the plugin repo (`psu-vaimo/claude`).
 - Keep skills generic. No client names, project codes, Jira keys, ticket numbers or colleagues' names in a skill. Those go in NOTES, and the skill says where to look them up. Examples use placeholders such as `ACME`.
-- Keep changes small and say what changed in one line. Commit in the SKILLS repo with a message like `daily: check Slack threads since last end of day`.
+- Keep changes small and say what changed in one line. Commit in the claude repo with a message like `daily: check Slack threads since last end of day`.
 - If no skill covers a recurring task, propose a new one.
 - Ask before large rewrites, not before small fixes.

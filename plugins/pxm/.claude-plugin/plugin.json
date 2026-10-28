@@ -1,0 +1,10 @@
+{
+  "name": "pxm",
+  "version": "0.1.0",
+  "description": "Product information (PX/PXM/PIM) consulting: discovery analysis, data audits, data modelling and the Vaimo PIM Discovery Report.",
+  "author": {
+    "name": "Pontus Sundén",
+    "email": "pontus.sunden@vaimo.com"
+  },
+  "repository": "https://github.com/psu-vaimo/claude"
+}

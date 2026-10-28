@@ -1,17 +1,22 @@
 {
-  "name": "psu-vaimo",
+  "name": "pontus",
   "owner": {
     "name": "Pontus Sundén",
     "email": "pontus.sunden@vaimo.com"
   },
   "metadata": {
-    "description": "Pontus Sundén's shared Claude skills."
+    "description": "Pontus Sundén's Claude Code plugins."
   },
   "plugins": [
     {
-      "name": "vaimo-skills",
-      "source": "./plugins/vaimo-skills",
-      "description": "Shared skills for project work: daily routine, worklog, Jira, notes through pen, and Ord."
+      "name": "routine",
+      "source": "./plugins/routine",
+      "description": "Pontus' project working routine: daily routine, worklog, Jira, notes through pen, and Ord."
+    },
+    {
+      "name": "pxm",
+      "source": "./plugins/pxm",
+      "description": "Product information (PX/PXM/PIM) consulting: discovery analysis, data audits, data modelling and the Vaimo PIM Discovery Report."
     }
   ]
 }

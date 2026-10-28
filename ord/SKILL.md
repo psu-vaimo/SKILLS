@@ -130,7 +130,7 @@ A node line holds the label plus shortforms, read wherever they are written (Spe
 ```
 - [ ] Call Anna about the invoice #urgent [due:: 2026-10-20] +task
 ```
-Tags, links, URLs, sigils and formulas stay where they read naturally in the label. Prefer `+task` over `[type:: task]`, `[x]` over `[state:: done]`, `#x` over `[tag:: x]` and `^id` over `[id:: x]`. A tag is part of the label, so adding or removing one changes the label. A `?? query` line is written as it is: nothing on it moves.
+Tags, links, URLs, sigils and formulas stay where they read naturally in the label. Prefer `+task` over `[type:: task]`, `[x]` over `[state:: done]`, `#x` over `[tag:: x]` and `^id` over `[id:: x]`. The same goes for your own fields (see "Shortforms over fields" below): `#ACME` over `project:: ACME`. A tag is part of the label, so adding or removing one changes the label. A `?? query` line is written as it is: nothing on it moves.
 
 **Field lines (C42, C43):** `key:: value`, one space after `::`, items joined with `; `. A field with no value is `key::`. A node with an empty label is written `""`.
 
@@ -140,6 +140,8 @@ Tags, links, URLs, sigils and formulas stay where they read naturally in the lab
 - **Field or prose.** Use fields for data points, attributes you would filter or compare on, references, and other structured information that is repeated on several nodes: a date, an owner, a status, an amount, a project. Notes, comments and details are added as plain child lines under the node: under `Meeting`, a child line `Ask about the budget` rather than `note:: Ask about the budget`.
 - **Inline or field line.** Short values can go inline (`[due:: 2026-10-20]`). Long values and several items read better as field lines. Writing both on one node merges them.
 - **Types or tags.** A type (`+task`, read "is a task") says what a node is and brings fields; a tag (`#urgent`) is a loose label in the text. Don't use `+urgent` for a tag. Use a nested tag (`#client/ruukki`) when tags form a family.
+- **Shortforms over fields.** When a value can be written as a shortform, write the shortform, not a field: `#ACME` rather than `project:: ACME` or `[project:: ACME]`, `@anna` rather than `owner:: anna`, `#bug` rather than `issue type:: bug`. A tag fills a field when the type's field definition claims it (`claims:: target` or `claims:: options`), and a sigil when a type binds it. If the workspace doesn't claim it yet, still write the tag and suggest adding the `claims` setting to the type in `Ord.workspace`. Use a field only for values with no shortform (dates, numbers, free text).
+- **Project tag on typed nodes.** When a node gets a type (`+task`, `+meeting`, `+issue`, …) whose definition has a `project` field, always add the project's tag to the label, even when the node already sits under its project: `[ ] Send mapping draft #ACME [due:: 2026-10-26] +task`. Use the project's code or ID as written on the project node, so `claims:: target` resolves it.
 - **Define types when they repeat.** When several nodes carry the same fields, define a type (in `Ord.workspace` with `+name`, or with `[defines:: name]` anywhere) and give it to them. Don't invent a type for a single node.
 - **References.** Use a link or a reference field, not a copy of the other node's text. Reference by label when it is unique; give the target an ID (`^ruukki`) and reference that when the label isn't unique or may change.
 - **No IDs by default.** Don't add `^id` to new nodes. Add one only when it is needed: a reference by label would not resolve (the label isn't unique or is likely to change), or a tool must address the node by ID. Journal nodes (days, weeks, months) are the exception: they always get their `^journal-…` ID.
@@ -202,6 +204,7 @@ Views, columns, footers and the rest: [references/queries.md](references/queries
 - Every new field line has `::` followed by a space, every inline field is in brackets (`[due:: 2026-10-10]`), and no prose has a bare `::`.
 - Indentation matches the file's (tabs or spaces), and each new line sits under the right parent.
 - Node lines keep the fixed order: state, label with its tags, inline fields, types, ID.
+- Values with a shortform are written as one (`#ACME`, `@anna`), not as a field, and every typed node whose type has a `project` field carries its project tag.
 - Types are `+name`, tags `#name`; no old-style `#task` or `+urgent` slipped in, and no field of your own is called `type`.
 - New references resolve: the label is unique, or you used an ID. New IDs are unused.
 - Sigils are used only when a type binds them.

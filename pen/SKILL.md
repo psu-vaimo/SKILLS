@@ -84,11 +84,11 @@ ACME +project
 	start:: 2026-09-01
 	end:: 2026-12-31
 	Meetings
-		Weekly sync 2026-10-23 [date:: 2026-10-23] +meeting
+		Weekly sync 2026-10-23 #ACME [date:: 2026-10-23] +meeting
 			Data import moves to week 45
 	Decisions
 	Tasks
-		[ ] Send mapping draft to Anna [due:: 2026-10-26] +task
+		[ ] Send mapping draft to Anna #ACME [due:: 2026-10-26] +task
 	Questions
 	Contacts
 ```
@@ -101,7 +101,9 @@ ACME +project
 
 - Anything about one project goes in its project file, under the matching section: meeting notes, decisions, tasks, questions, contacts, facts.
 - Day-bound things go under the day node in the journal: the daily plan, the day's meetings, captures, and tasks with no clear project (`[ ] Reply to Anna: invoice [due:: 2026-10-23] +task`).
-- A task is `[ ] label +task` with `[due:: …]`, plus `[project:: ACME]` when it sits outside its project file. Complete it with `[x]`.
+- A task is `[ ] label #ACME +task` with `[due:: …]`. Complete it with `[x]`.
+- Every typed node (`+task`, `+meeting`, `+issue`, …) whose type has a `project` field gets the project tag, `#ACME`, wherever it sits, in the project file too. Leave it off only when there is no clear project.
+- Prefer shortforms to fields: `#ACME` not `[project:: ACME]`, `@anna` not `owner:: anna`. See the `ord` skill's "Shortforms over fields".
 - To point at a task or meeting from the journal, link it by label, `[[Send mapping draft to Anna]]`, instead of copying it.
 - Don't add `^id` to new nodes. Add one only when necessary, e.g. a link target whose label isn't unique. Journal nodes always get their `^journal-…` ID.
 - Commit messages name the project or the day: `ACME: notes from weekly sync 2026-10-23`, `journal: plan for 2026-10-24`.
@@ -111,7 +113,7 @@ ACME +project
 Work that is interrupted, paused or has to continue another time goes to `stash.txt` in NOTES, so a later session can pick it up.
 
 - When a session stops before the work is done, suggest stashing it. The user can also ask, e.g. "stash this".
-- `stash.txt` has one root node, `Stash ^stash`. Add each item with `edit_section` append on `heading:"^stash"`, as one node `YYYY-MM-DD topic`, plus `[project:: X]` when the project is clear. Children say where it stopped, what is done, the open questions and the next step, enough for a session with no other context.
+- `stash.txt` has one root node, `Stash ^stash`. Add each item with `edit_section` append on `heading:"^stash"`, as one node `YYYY-MM-DD topic`, plus the project tag (`#ACME`) when the project is clear. Children say where it stopped, what is done, the open questions and the next step, enough for a session with no other context.
 - Lifting an item: when the work is picked up, delete its node if it is finished in that session, otherwise move it where it belongs with `move_node`, e.g. to the project's Tasks or today's day node. A lifted item never stays in the stash.
 - Commit messages: `stash: <topic>` and `stash: lift <topic>`.
 

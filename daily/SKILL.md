@@ -50,7 +50,7 @@ Never quote message contents at length. A short reference ("Anna, client X, data
 ### 3. Propose and confirm
 
 Propose in one list:
-- a task per mail or Slack item still needing a reply (never for a thread the user already answered, and not when an open reply task for it already exists), `[ ] Reply to [who]: [topic] [due:: today's date] +task`, in the project file's Tasks when the project is clear, otherwise under today's day node
+- a task per mail or Slack item still needing a reply (never for a thread the user already answered, and not when an open reply task for it already exists), `[ ] Reply to [who]: [topic] #ACME [due:: today's date] +task`, in the project file's Tasks with the project tag when the project is clear, otherwise under today's day node without it
 - today's meetings as one line each under today's day node, `09:00 ACME weekly sync`. Meeting notes go in the project file later, through pen.
 - which stash items to lift today. Lifting follows pen's "Stash": move the item to today's day node or its project, or delete it once done.
 

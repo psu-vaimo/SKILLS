@@ -4,6 +4,11 @@
 
 When working in a local checkout of this repo, start every session by pulling from origin (`git pull origin main`) so you work on the latest skills.
 
-## Plugin
+## Layout
 
-The repo is also a Claude Code plugin (`vaimo-skills`) and its own marketplace, in `.claude-plugin/`. The skill folders stay at the root because project repos mount this repo as the `.claude/skills` submodule. When you add, rename or remove a skill folder, update the `skills` list in `.claude-plugin/plugin.json` and bump its `version`, then run `claude plugin validate .`.
+This repo is a Claude Code marketplace (`psu-vaimo`, in `.claude-plugin/marketplace.json`) with its plugins under `plugins/`. The `vaimo-skills` plugin has its manifest in `plugins/vaimo-skills/.claude-plugin/plugin.json` and one folder per skill in `plugins/vaimo-skills/skills/`.
+
+- A new skill is a new folder `plugins/vaimo-skills/skills/<name>/` with a `SKILL.md`. Skills in that folder are picked up without listing them.
+- Bump `version` in `plugin.json` with every change to the plugin, or installed copies won't update.
+- A new plugin gets its own folder under `plugins/` and an entry in `marketplace.json`.
+- Run `claude plugin validate .` and `claude plugin validate plugins/<name>` before committing.

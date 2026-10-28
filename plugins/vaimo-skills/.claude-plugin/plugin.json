@@ -1,11 +1,10 @@
 {
   "name": "vaimo-skills",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Shared skills for project work: daily routine, worklog, Jira, notes through pen, and Ord.",
   "author": {
     "name": "Pontus Sundén",
     "email": "pontus.sunden@vaimo.com"
   },
-  "repository": "https://github.com/psu-vaimo/SKILLS",
-  "skills": ["./daily", "./jira", "./ord", "./pen", "./proj", "./worklog"]
+  "repository": "https://github.com/psu-vaimo/SKILLS"
 }

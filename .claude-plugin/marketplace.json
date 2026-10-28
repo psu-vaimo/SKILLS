@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "vaimo-skills",
-      "source": "./",
+      "source": "./plugins/vaimo-skills",
       "description": "Shared skills for project work: daily routine, worklog, Jira, notes through pen, and Ord."
     }
   ]

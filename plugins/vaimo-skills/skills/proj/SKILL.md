@@ -15,7 +15,7 @@ How work is organised across all of the user's projects. Follow it unless the us
 ## Repos
 
 - **One repo per project.** It holds working docs, deliverables and sometimes project-specific skills.
-- **Shared skills come in as a git submodule** in each project repo. Update the submodule to get the latest skills (`git submodule update --remote`), and commit skill changes inside the submodule, not as copies in the project repo.
+- **Shared skills come from the `vaimo-skills` plugin** (marketplace `psu-vaimo`, repo `psu-vaimo/SKILLS`), installed once per user. Update with `claude plugin update vaimo-skills@psu-vaimo`. Change skills in the SKILLS repo, never as copies in a project repo.
 - **Project repos hold no notes and no project facts.** Those go in NOTES (below). If you find notes or facts in a project repo, propose moving them.
 
 ## Notes
@@ -47,6 +47,6 @@ Skills improve as part of ordinary work. Always keep changing and developing the
 
 - When the user corrects how something is done, or you repeat the same workaround, update the skill that should have known, in the shared skills repo (`psu-vaimo/SKILLS`).
 - Keep skills generic. No client names, project codes, Jira keys, ticket numbers or colleagues' names in a skill. Those go in NOTES, and the skill says where to look them up. Examples use placeholders such as `ACME`.
-- Keep changes small and say what changed in one line. Commit in the submodule with a message like `daily: check Slack threads since last end of day`.
+- Keep changes small and say what changed in one line. Commit in the SKILLS repo with a message like `daily: check Slack threads since last end of day`.
 - If no skill covers a recurring task, propose a new one.
 - Ask before large rewrites, not before small fixes.

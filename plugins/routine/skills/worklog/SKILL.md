@@ -1,6 +1,6 @@
 ---
 name: worklog
-description: Rebuild the user's working day from Claude chats, Google Calendar, Gmail, Slack, the NOTES repo and Jira, match every block of work to a real Jira issue the user is allowed to log on (assigned to them or unassigned, not an epic, with remaining estimate, inside the weekly Tempo plan), show exactly what will be logged, then log it and move the issues to In progress. Use this whenever the user says "/worklog", asks what to log, wants to log time, fill the timesheet, book hours, or asks "how much time did I spend on X", even casually ("log today", "do my hours"). The daily skill runs it as part of the end of day. Start right away.
+description: Rebuild the user's working day from Claude chats, Google Calendar, Gmail, Slack, GitHub, the NOTES repo and Jira, match every block of work to a real Jira issue the user is allowed to log on (assigned to them or unassigned, not an epic, with remaining estimate, inside the weekly Tempo plan), show exactly what will be logged, then log it and move the issues to In progress. Use this whenever the user says "/worklog", asks what to log, wants to log time, fill the timesheet, book hours, or asks "how much time did I spend on X", even casually ("log today", "do my hours"). The daily skill runs it as part of the end of day. Start right away.
 ---
 
 # Worklog
@@ -43,6 +43,11 @@ Search narrowly by date. Never read whole inboxes or channels. Never quote messa
 6. **Slack**: the user's sent messages only, `from:me on:YYYY-MM-DD`.
 7. **Gmail**: sent only, `in:sent after:YYYY/MM/DD before:YYYY/MM/DD+1`.
 8. **NOTES** (through the pen skill): `history` for commits on the date (their times are good anchors), the day node `^journal-YYYY-MM-DD`, and meeting notes dated that day in the project files. A task with a project is good evidence of what the work was about. NOTES is read only in this skill.
+9. **GitHub** (`gh` CLI): always as `psu-vaimo`, never `@me`, since `gh` may be logged into a private account. Run each search with that account's token, `GH_TOKEN=$(gh auth token --user psu-vaimo) gh search ...`, so private Vaimo repos are visible without switching the active account:
+   - commits: `gh search commits --author=psu-vaimo --committer-date=YYYY-MM-DD --json repository,sha,commit`
+   - PRs opened or updated: `gh search prs --author=psu-vaimo --updated=YYYY-MM-DD --json repository,number,title,updatedAt`
+   - PRs reviewed: `gh search prs --reviewed-by=psu-vaimo --updated=YYYY-MM-DD --json repository,number,title,updatedAt`
+   Commit times are good anchors. Repo names, branch names and commit messages often carry the issue key or point to the project. Skip the NOTES repo here, step 8 covers it. If there's no token for `psu-vaimo`, skip GitHub and list it as missing.
 
 Missing source? Skip it and list it in the heading. If past-chat tools are missing, add one line: enable Settings > "Search and reference chats".
 
